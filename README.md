@@ -7,6 +7,13 @@ git clone https://github.com/dannylisa/haechi-labs-fe-test
 
 # Install & Get Started
 ## Server
+1. Henesis API Proxy를 실행합니다.
+```
+docker run -d -e NODE_ENV=test -p 3000:3000 haechi/henesis-api-proxy:stable
+docker ps
+docker logs -f <CONTAINER_ID>
+```
+2. 다음을 실행합니다.
 ```
 cd packages/server
 npm install

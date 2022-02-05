@@ -33,6 +33,7 @@ cd packages/app
 npm install
 npm run start
 ```
+3. http://localhost:5000/wallet 으로 접속합니다.
 
 # 캡처 화면
 ## 입출금 목록 화면

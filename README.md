@@ -34,13 +34,13 @@ npm install
 npm run start
 ```
 
-## 캡처 화면
-# 입출금 목록 화면
+# 캡처 화면
+## 입출금 목록 화면
 ![입출금_목록](https://user-images.githubusercontent.com/30591542/152655507-d551bcfd-300e-4597-b0e0-a7223f6cab9f.png)
 
-# 출금 화면
+## 출금 화면
 ![출금_기본](https://user-images.githubusercontent.com/30591542/152655511-3206b17d-bcec-435c-bc15-877cf461c9f0.png)
 
-# 유효성 체크
+## 유효성 체크
 ![출금_유효성체크](https://user-images.githubusercontent.com/30591542/152655515-26c434c8-e29b-4ebe-8466-d79d6fd0b242.png)
 

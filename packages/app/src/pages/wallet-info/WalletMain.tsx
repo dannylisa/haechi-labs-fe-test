@@ -1,5 +1,6 @@
+import styled from "styled-components";
 import { currentSelectedWalletState } from "atoms/current-selected-wallet.atom"
-import { Divider, FlexBox } from "materials";
+import { Divider } from "materials";
 import { IconType } from "react-icons";
 import { HiUpload } from "react-icons/hi";
 import { AiOutlineUnorderedList } from "react-icons/ai";
@@ -9,7 +10,6 @@ import { useState } from "react";
 import { HEADER_HEIGHT, VALID_SCREEN_CSS } from "./constants";
 import Transfers from "./transfers";
 import { Withdrawl } from "./Withdrawl";
-import styled from "styled-components";
 
 const tabs:[IconType, string][] = [
     [AiOutlineUnorderedList, "입출금 내역"],

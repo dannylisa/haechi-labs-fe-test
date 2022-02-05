@@ -26,3 +26,5 @@ cd packages/app
 npm install
 npm run start
 ```
+
+## 캡처 화면

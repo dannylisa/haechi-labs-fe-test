@@ -1,4 +1,4 @@
-import { Text, TextProps } from 'materials';
+import { TextProps } from 'materials';
 import { ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 

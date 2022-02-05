@@ -1,9 +1,9 @@
 import { IconType } from "react-icons";
 import styled from "styled-components";
-import { Divider, FlexBox, Text } from 'materials'
+import { FlexBox, Text } from 'materials'
 import { VALID_SCREEN_CSS } from "./constants";
 
-interface WalletInfoMenuTab {
+interface WalletInfoMenuTabProps {
     tabs: [IconType, string][]
     selected: number
     setSelected: (num:number) => void
@@ -20,7 +20,7 @@ const Tab = styled.div<{selected: boolean}>`
     padding: 7px 15px 5px 15px;  
 
 `
-export const WalletInfoMenuTab = ({tabs, selected, setSelected}:WalletInfoMenuTab) => {
+export const WalletInfoMenuTab = ({tabs, selected, setSelected}:WalletInfoMenuTabProps) => {
     return (
         <TabContainer>
             <div>

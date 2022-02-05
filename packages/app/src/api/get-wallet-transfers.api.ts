@@ -1,5 +1,5 @@
 import { AxiosRequestConfig } from "axios";
-import { IBalance, ITransferRequest } from "interfaces";
+import { ITransferRequest } from "interfaces";
 import { requestAPI } from "./config";
 
 export function getWalletTransfers(walletId: string, page: number){

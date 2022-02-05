@@ -1,0 +1,34 @@
+{
+  "name": "frontend-coding-test-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna exec npm install",
+    "build": "lerna run build --parallel",
+    "prettier": "lerna run prettier --parallel",
+    "eslint": "lerna run eslint --parallel",
+    "eslint:fix": "lerna run eslint:fix --parallel",
+    "test": "lerna run test --parallel",
+    "type-check": "lerna run type-check --parallel",
+    "postinstall": "lerna bootstrap",
+    "prepush": "lerna run prepush --parallel"
+  },
+  "devDependencies": {
+    "husky": "4.2.5",
+    "lerna": "3.16.4",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run prepush"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:rnapp/rnapp/rnapp.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

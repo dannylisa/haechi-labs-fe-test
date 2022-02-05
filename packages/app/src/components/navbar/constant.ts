@@ -1,0 +1,1 @@
+export const NAV_PADDING_HORIZONTAL = 28;

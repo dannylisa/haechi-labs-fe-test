@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "."
+    },
+    {
+      "path": "packages/app"
+    },
+    {
+      "path": "packages/server"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "packages/*/*": true
+    },
+    "typescript.tsdk": "app/node_modules/typescript/lib"
+  }
+}

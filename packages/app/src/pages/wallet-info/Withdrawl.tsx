@@ -31,7 +31,7 @@ export const Withdrawl = () => {
         `${b.name} (${
             +`${Math.floor(+`${b.spendableAmount}e-${b.decimals-8}`)}e-8`
         } ${b.ticker})`
-    ), [wallet?.id])
+    ), [wallet?.id, balances.length])
 
     // 보낼 코인 종류 및 잔고
     const [targetBalance, setTargetBalance] = useState<IBalance | null>(null)

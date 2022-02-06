@@ -49,3 +49,10 @@ npm run start
 
 ## 유효하지 않은 지갑 주소 혹은 네트워크 오류 시
 ![지갑_주소_Not_Found](https://user-images.githubusercontent.com/30591542/152665312-a20d3bcb-cc27-4277-8772-46afda456f55.png)
+
+
+# Stack
+React, Typescript
+State Management : Recoil
+Design: Styled-components
+Http Client: axios

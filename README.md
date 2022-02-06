@@ -35,6 +35,8 @@ npm run start
 ```
 3. http://localhost:5000 으로 접속합니다.
 
+
+
 # 캡처 화면
 ## 입출금 목록 화면
 ![입출금_목록](https://user-images.githubusercontent.com/30591542/152655507-d551bcfd-300e-4597-b0e0-a7223f6cab9f.png)

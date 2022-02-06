@@ -52,7 +52,7 @@ npm run start
 
 
 # Stack
-React, Typescript
-State Management : Recoil
-Design: Styled-components
-Http Client: axios
+- React, Typescript
+- State Management : Recoil
+- Design: Styled-components
+- Http Client: axios

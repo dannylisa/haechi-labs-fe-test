@@ -45,3 +45,5 @@ npm run start
 ## 유효성 체크
 ![출금_유효성체크](https://user-images.githubusercontent.com/30591542/152655515-26c434c8-e29b-4ebe-8466-d79d6fd0b242.png)
 
+## 유효하지 않은 지갑주소 혹은 네트워크 오류 시
+![지갑_주소_Not_Found](https://user-images.githubusercontent.com/30591542/152665312-a20d3bcb-cc27-4277-8772-46afda456f55.png)

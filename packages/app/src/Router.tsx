@@ -1,9 +1,12 @@
 import React from "react";
 import Navbar from "components/navbar";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import WalletInfo from "pages/wallet-info";
 import styled from "styled-components";
-import { Home } from "pages/wallet-info/home";
+import { Home } from "pages/home";
+import { NotFound } from "pages/NotFound";
+import { useRecoilValue } from "recoil";
+import { currentSelectedWalletState } from "atoms/current-selected-wallet.atom";
 
 const Wrapper = styled.div`
     margin-left: 240px;
@@ -12,13 +15,23 @@ const Wrapper = styled.div`
 `
 
 const Router = () => {
+  const wallet = useRecoilValue(currentSelectedWalletState)
   return (
     <BrowserRouter>
         <Navbar />
         <Wrapper>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route 
+              path="/" 
+              element={
+                wallet ?
+                <Navigate replace to={`/wallet/${wallet.id}`} />
+                : 
+                <Home />
+              } 
+            />
             <Route path="/wallet/:id" element={<WalletInfo />}/>
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </Wrapper>
     </BrowserRouter>

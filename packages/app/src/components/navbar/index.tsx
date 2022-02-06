@@ -27,6 +27,7 @@ const Logo = styled(Link)`
     align-items: flex-start;
     padding: ${NAV_PADDING_HORIZONTAL}px;
 `
+
 export default function Navbar(){
     const [wallets, setWallets] = useState<IWallet[]>([])
     const navigate = useNavigate()    
@@ -38,16 +39,12 @@ export default function Navbar(){
             .then(res => {
                 setWallets(res.data)
                 // 지갑이 1개 이상 있으면 지갑 정보 페이지로 이동
-                if(pathname === "/")
+                if(pathname === "/" && res.data.length)
                     navigate(`wallet/${res.data[0].id}`)
             })
             
     },[])
-        
-    useEffect(() => {
-        if(pathname === "/" && wallets.length)
-            navigate(`wallet/${wallets[0].id}`)
-    }, [pathname])
+
     return (
         <Nav>
             {/* Logo */}

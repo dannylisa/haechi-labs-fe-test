@@ -1,4 +1,3 @@
-import { TextProps } from 'materials';
 import { ComponentPropsWithRef } from 'react'
 import styled from 'styled-components'
 
@@ -6,7 +5,6 @@ import styled from 'styled-components'
 export interface ButtonProps extends ComponentPropsWithRef<"button">{
     height?: number
     flex?: number
-    textProps?: Omit<TextProps, "content">
     paddingHorizontal?: number
     paddingVertical?: number
 }

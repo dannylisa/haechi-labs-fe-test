@@ -33,16 +33,16 @@ export default function Navbar(){
     const {pathname} = useLocation();
 
 
-
     useEffect(()=>{
         getWallets()
             .then(res => {
                 setWallets(res.data)
+                // 지갑이 1개 이상 있으면 지갑 정보 페이지로 이동
                 if(pathname === "/")
                     navigate(`wallet/${res.data[0].id}`)
             })
             
-        },[])
+    },[])
         
     useEffect(() => {
         if(pathname === "/" && wallets.length)

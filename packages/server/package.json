@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env TESTNET_API_PORT=3000 PORT=3001 ts-node index.ts",
-    "test:coins": "ts-node get-coins.ts"
+    "start": "cross-env TESTNET_API_PORT=3000 PORT=3001 ts-node index.ts"
   },
   "author": "BoBeenLee",
   "license": "ISC",

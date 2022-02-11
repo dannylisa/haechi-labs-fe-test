@@ -18,7 +18,7 @@ export const TransfersTableHeader = () => {
                 <Cell className="balance" align="right" >
                     <Text type="P2" bold content="수량" />
                 </Cell>
-                <Cell className="receiveUser"  align="right">
+                <Cell className="receiveUser" align="right">
                     <Text type="P2" bold content="트랜잭션 해시" />
                 </Cell>
                 <Cell className="status">

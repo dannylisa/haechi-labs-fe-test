@@ -60,5 +60,5 @@ export const FlexBox = styled.div<FlexBoxProps>`
     `}
 
     ${({flex}) => flex && `flex: ${flex};`}
-    ${({css}) => css ? css.flat() : ''}
+    ${({css}) => css && css.flat()}
 `
